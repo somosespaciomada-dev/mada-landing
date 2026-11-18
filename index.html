@@ -42,7 +42,10 @@ const PROYECTOS=[
  {nombre:"Local de ropa Rizzo Uomo",estado:"finalizado",ubicacion:"Rada Tilly, Chubut",descripcion:"Diseño interior y equipamiento completo de un local de ropa masculina en galería.",tipo:["Diseño de interior","Obra en seco"],detalle:"Hicimos el diseño interior y nos ocupamos de todo el equipamiento, desde la alfombra y los maniquíes hasta las telas para coser las cortinas de los probadores, la pintura y los muebles, que compramos en Buenos Aires. También realizamos la obra en seco, el armado de los muebles, la pintura y la colocación de los artefactos de iluminación.",foto:"img/rizzo.webp"}
 ];
 const PROPIEDADES=[
- /* {operacion:"Venta" | "Alquiler", titulo:"", ubicacion:"", descripcion:"", caracteristicas:["",""], foto:""} */
+/* operacion: "Venta" | "Alquiler" | "Venta de pozo" | "Venta / Alquiler" · estado (opcional): "pronto" → etiqueta "Próximamente" */
+ {operacion:"Venta / Alquiler",titulo:"Dúplex amoblados — Complejo Raíces",ubicacion:"Añelo, Neuquén",descripcion:"2 unidades amobladas, en venta o alquiler.",caracteristicas:["57 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Amoblado", "Aire acondicionado"],foto:"img/raices.webp"},
+ {operacion:"Venta de pozo",titulo:"Dúplex en pozo — Complejo Raíces",ubicacion:"Añelo, Neuquén",descripcion:"4 unidades en venta de pozo.",caracteristicas:["57 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Aire acondicionado"],foto:"img/raices.webp"},
+ {operacion:"Alquiler",estado:"pronto",titulo:"Dúplex amoblados — Los Álamos",ubicacion:"Añelo, Neuquén",descripcion:"2 unidades en alquiler. Próximamente: están en construcción.",caracteristicas:["64 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Amoblado", "Aire acondicionado"],foto:"img/alamos.webp"}
 ];
 const TESTIMONIOS=[
  {texto:"Contar con MADA para nuestro emprendimiento familiar fue un acierto. Teníamos ideas de cómo queríamos nuestra tienda, pero el resultado fue mil veces mejor. Definitivamente Espacio MADA se encargará de nuestros nuevos proyectos. Será un éxito asegurado.",autor:"Noelia",proyecto:""}
@@ -304,8 +307,14 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .prop p{margin:0;color:var(--muted);font-size:15px}
 .prop ul{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
 .prop li{font-size:13px;border:1px solid var(--line);padding:3px 10px;color:var(--muted)}
-.prop .btn{margin-top:8px;text-align:center}
+.prop{display:flex;flex-direction:column}
+.prop .body{flex:1}
+.prop .btn{margin-top:auto;text-align:center}
 .badge{position:absolute;top:14px;left:14px;z-index:1;padding:5px 12px;background:var(--navy);color:var(--cream);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.badge.right{left:auto;right:14px}
+/* Un color por operación: Venta = azul marca · Alquiler = naranja · Venta / Alquiler = azul acero · Venta de pozo = verde */
+.badge.op-mixto{background:#3f649a;color:var(--white)}
+.badge.op-pozo{background:#2d7566;color:var(--white)}
 .badge.alq,.badge.st-obra{background:var(--accent);color:var(--on-accent)}
 .badge.st-pronto{background:rgb(var(--navy-rgb)/.82);border:1px solid rgb(var(--light-rgb)/.55);padding:4px 11px}
 .draft{font-size:13px;color:var(--muted);margin-top:28px;border-left:2px solid var(--accent);padding-left:14px}
@@ -570,7 +579,6 @@ html:not(.js) .cgrid{grid-template-columns:1fr}
 <h2>Propiedades en Añelo.</h2>
 <p class="lead">Dúplex en venta y alquiler en Añelo, Neuquén. Consultanos por disponibilidad y condiciones.</p>
 <div class="props" id="props"></div>
-<p class="draft">Contenido provisional: las tarjetas se generan desde la lista <code>PROPIEDADES</code> en el bloque CONFIG del código. Mientras esté vacía se muestran tarjetas de ejemplo sin datos.</p>
 </div></section>
 
 <section class="band" id="contacto"><div class="wrap cgrid">
@@ -696,7 +704,7 @@ const EN={
 "Consultar por un proyecto":"Inquire about a project",
 "Inmobiliaria — Añelo, Neuquén":"Real estate — Añelo, Neuquén",
 "Venta":"Sale",
-"Alquiler":"Rental",
+"Alquiler":"Rent",
 "Proyectos y obras":"Projects and works",
 "Obras que hablan por nosotros.":"Works that speak for themselves.",
 "Obra nueva":"New build",
@@ -734,6 +742,21 @@ const EN={
 "¿No se abrió? Abrir WhatsApp":"Didn't open? Open WhatsApp",
 "Cambiar a modo claro":"Switch to light mode",
 "Trayectoria":"Track record",
+"Venta / Alquiler":"Sale / Rent",
+"Venta de pozo":"Off-plan sale",
+"Dúplex amoblados — Complejo Raíces":"Furnished duplexes — Complejo Raíces",
+"Dúplex en pozo — Complejo Raíces":"Off-plan duplexes — Complejo Raíces",
+"Dúplex amoblados — Los Álamos":"Furnished duplexes — Los Álamos",
+"2 unidades amobladas, en venta o alquiler.":"2 furnished units, for sale or rent.",
+"4 unidades en venta de pozo.":"4 units for off-plan sale.",
+"2 unidades en alquiler. Próximamente: están en construcción.":"2 units for rent. Coming soon: they are under construction.",
+"Dúplex":"Duplex",
+"3 ambientes":"3 rooms",
+"2 dormitorios":"2 bedrooms",
+"2 baños completos":"2 full bathrooms",
+"Gas natural y red cloacal":"Natural gas and sewer system",
+"Amoblado":"Furnished",
+"Aire acondicionado":"Air conditioning",
 "Equipo en una obra con paneles SIP":"Team at a SIP panel construction site",
 "Capacitaciones / sistema SIP":"Training / SIP system",
 "Finalizado":"Completed",
@@ -833,8 +856,9 @@ $("#projects").innerHTML=PROYECTOS.map(p=>`<article class="card project rv${p.de
 
 </script>
 <script>
+const OPCLASE={"Venta":"op-venta","Alquiler":"alq","Venta / Alquiler":"op-mixto","Venta de pozo":"op-pozo"};
 const PROP_EJEMPLO=op=>({operacion:op,titulo:"Dúplex — título a definir",ubicacion:"Añelo, Neuquén",descripcion:"Descripción provisional. Completar con datos reales.",caracteristicas:["Característica 1","Característica 2","Característica 3"],foto:""});
-$("#props").innerHTML=(PROPIEDADES.length?PROPIEDADES:[PROP_EJEMPLO("Venta"),PROP_EJEMPLO("Alquiler")]).map(p=>`<article class="card prop rv"><div class="ph${p.foto?" has":""}" data-label="Foto de la propiedad"${bg(p.foto)}><span class="badge${p.operacion==="Alquiler"?" alq":""}">${esc(p.operacion)}</span></div><div class="body"><span class="meta">${esc(p.ubicacion)}</span><h3>${esc(p.titulo)}</h3><p>${esc(p.descripcion)}</p><ul>${p.caracteristicas.map(c=>`<li>${esc(c)}</li>`).join("")}</ul><a class="btn solid" target="_blank" rel="noopener" href="${wa("Hola MADA, quiero consultar por: "+p.titulo+" ("+p.operacion+") en "+p.ubicacion)}">Consultar por WhatsApp</a></div></article>`).join("");
+$("#props").innerHTML=(PROPIEDADES.length?PROPIEDADES:[PROP_EJEMPLO("Venta"),PROP_EJEMPLO("Alquiler")]).map(p=>`<article class="card prop rv"><div class="ph${p.foto?" has":""}" data-label="Foto de la propiedad"${bg(p.foto)}><span class="badge${OPCLASE[p.operacion]?" "+OPCLASE[p.operacion]:""}">${esc(p.operacion)}</span>${{pronto:"Próximamente",obra:"En obra"}[p.estado]?`<span class="badge right st-${esc(p.estado)}">${{pronto:"Próximamente",obra:"En obra"}[p.estado]}</span>`:""}</div><div class="body"><span class="meta">${esc(p.ubicacion)}</span><h3>${esc(p.titulo)}</h3><p>${esc(p.descripcion)}</p><ul>${p.caracteristicas.map(c=>`<li>${esc(c)}</li>`).join("")}</ul><a class="btn solid" target="_blank" rel="noopener" href="${wa("Hola MADA, quiero consultar por: "+p.titulo+" ("+p.operacion+") en "+p.ubicacion)}">Consultar por WhatsApp</a></div></article>`).join("");
 
 </script>
 <script>
