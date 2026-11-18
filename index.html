@@ -30,21 +30,22 @@ const CONFIG={
 /* Si cambiás whatsapp, instagram o email, cambialos también en la sección Contacto y en el pie
    del HTML (buscá "wa.me"): son el respaldo para navegadores sin JavaScript. */
 const PROYECTOS=[
-/* estado:"finalizado" | "obra" | "pronto" (etiqueta sobre la foto) · destacado:true → ancho completo · mediano:true → mitad de ancho · detalle:"" (opcional) → texto largo que se despliega con "Ver detalle" */
- {destacado:true,nombre:"Complejo Raíces",estado:"obra",ubicacion:"Añelo, Neuquén",descripcion:"Dúplex de viviendas multifamiliares.",tipo:["Proyecto y dirección de obra", "Obra nueva", "Urbanización"],foto:"img/raices.webp"},
- {mediano:true,nombre:"Los Álamos",estado:"obra",ubicacion:"Añelo, Neuquén",descripcion:"Dúplex de viviendas multifamiliares.",tipo:["Proyecto y dirección de obra", "Obra nueva", "Urbanización"],foto:"img/alamos.webp"},
- {mediano:true,nombre:"Dúplex Los Coirones",estado:"finalizado",ubicacion:"Rada Tilly, Chubut",descripcion:"Vivienda multifamiliar en dúplex.",tipo:["Proyecto", "Obra nueva"],foto:"img/coirones.webp"},
- {nombre:"Consultorio odontológico Ferreira",estado:"finalizado",ubicacion:"Villa de Mayo, Buenos Aires",descripcion:"Realizamos pintura en paredes y techos, revestimientos símil cemento, cambio de iluminación y artefactos.",tipo:["Reforma integral"],detalle:"Agregamos un sector con wall panel y muebles con luces LED, y un sector para colocar un logo retroiluminado. Renovamos completamente baños, sala de espera y salas en general.",foto:"img/ferreira.webp"},
- {nombre:"Casa en Santa Bárbara",estado:"finalizado",ubicacion:"Troncos del Talar, Buenos Aires",descripcion:"Fachada, solarium exterior, cubierta e interior.",tipo:["Reforma integral"],detalle:"Resolvimos problemas de filtración en azotea y le hicimos un cambio de imagen a la fachada, incorporando wall panel y cambiando el color del tarquini. En el solarium exterior resolvimos grietas en el banco de hormigón y le dimos pintura y mantenimiento a todo ese sector, renovando su imagen. En el interior resolvimos problemas de humedad y cambiamos la iluminación, además de agregar un wall panel para renovar el espacio.",foto:"img/santabarbara.webp"},
- {nombre:"Casa en Barrio Castaños",estado:"finalizado",ubicacion:"Nordelta, Buenos Aires",descripcion:"Fachada, balcón, azotea, galería y parrilla.",tipo:["Reforma integral"],detalle:"Restauramos la fachada y le hicimos un cambio agregándole un wall panel y artefactos de iluminación en el wall panel y en el acceso para renovarla. Además, pintamos. También arreglamos el sector del balcón agregándole revestimiento y reparamos la azotea. En la galería y la parrilla hicimos una renovación integral: pintamos el frente de la parrilla, cambiamos el sector de la bacha, pintamos todo y cambiamos el color, renovando su diseño.",foto:"img/castanos.webp"},
+/* fotos:[ lista de rutas a fotos dentro de img/ ] (opcional) → fotos adicionales: la tarjeta muestra "+N fotos" y abre una galería · instagram:[{url:"https://…",tipo:"reel"|"carrusel",fecha:"AAAA-MM"},…] (opcional; también acepta un solo texto con el enlace) → enlaces "Ver en Instagram", en el orden de la lista · estado:"finalizado" | "obra" | "pronto" (etiqueta sobre la foto) · destacado:true → ancho completo · mediano:true → mitad de ancho · detalle:"" (opcional) → texto largo que se despliega con "Ver detalle" */
+ {destacado:true,nombre:"Complejo Raíces",estado:"obra",ubicacion:"Añelo, Neuquén",descripcion:"Dúplex de viviendas multifamiliares.",tipo:["Proyecto y dirección de obra", "Obra nueva", "Urbanización"],foto:"img/raices.webp",fotos:["img/raices2.webp", "img/raices3.webp", "img/raices4.webp"],instagram:[{"url": "https://www.instagram.com/reel/DK0UQpDuDxP/", "tipo": "reel", "fecha": "2025-06-12"}, {"url": "https://www.instagram.com/reel/DWH-sPCjhMm/", "tipo": "reel", "fecha": "2026-03-20"}, {"url": "https://www.instagram.com/reel/DWXUZk3DnJk/", "tipo": "reel", "fecha": "2026-03-26"}, {"url": "https://www.instagram.com/p/DW4LGnpDgHC/", "tipo": "carrusel", "fecha": "2026-04-08"}, {"url": "https://www.instagram.com/p/DYsQMNAlK0y/", "tipo": "carrusel", "fecha": "2026-05-23"}, {"url": "https://www.instagram.com/reel/DY-EA12OnXc/", "tipo": "reel", "fecha": "2026-05-30"}, {"url": "https://www.instagram.com/p/DZc9EYNDpk5/", "tipo": "carrusel", "fecha": "2026-06-11"}, {"url": "https://www.instagram.com/reel/DZsJvo8uQFX/", "tipo": "reel", "fecha": "2026-06-17"}, {"url": "https://www.instagram.com/p/DZyKXwPjrNG/", "tipo": "carrusel", "fecha": "2026-06-19"}, {"url": "https://www.instagram.com/reel/DaF5-aROc9b/", "tipo": "reel", "fecha": "2026-06-27"}, {"url": "https://www.instagram.com/p/DaLpN_lFKoz/", "tipo": "carrusel", "fecha": "2026-06-29"}, {"url": "https://www.instagram.com/reel/DadV0QTOvcF/", "tipo": "reel", "fecha": "2026-07-06"}, {"url": "https://www.instagram.com/reel/DbBgHKLuXgB/", "tipo": "reel", "fecha": "2026-07-20"}, {"url": "https://www.instagram.com/p/Dbd43hrFDHH/", "tipo": "carrusel", "fecha": "2026-07-31"}, {"url": "https://www.instagram.com/reel/Db35F7SPnsQ/", "tipo": "reel", "fecha": "2026-08-10"}, {"url": "https://www.instagram.com/p/DcRfQJwFFFq/", "tipo": "carrusel", "fecha": "2026-08-20"}, {"url": "https://www.instagram.com/reel/Dcgp00Cu6wY/", "tipo": "reel", "fecha": "2026-08-26"}, {"url": "https://www.instagram.com/p/Dc3uAKrDgDM/", "tipo": "carrusel", "fecha": "2026-09-04"}, {"url": "https://www.instagram.com/reel/DdWh1FPugT0/", "tipo": "reel", "fecha": "2026-09-16"}, {"url": "https://www.instagram.com/p/Dd41HnvDtm8/", "tipo": "carrusel", "fecha": "2026-09-29"}, {"url": "https://www.instagram.com/reel/DecooHTtGIZ/", "tipo": "reel", "fecha": "2026-10-13"}, {"url": "https://www.instagram.com/p/DfAiKz9FC9A/", "tipo": "carrusel", "fecha": "2026-10-27"}, {"url": "https://www.instagram.com/reel/DfaD8krS9jY/", "tipo": "reel", "fecha": "2026-11-06"}]},
+ {mediano:true,nombre:"Los Álamos",estado:"obra",ubicacion:"Añelo, Neuquén",descripcion:"Dúplex de viviendas multifamiliares.",tipo:["Proyecto y dirección de obra", "Obra nueva", "Urbanización"],foto:"img/alamos.webp",instagram:[{"url": "https://www.instagram.com/reel/DYXBgzwuSoj/", "tipo": "reel", "fecha": "2026-05-15"}]},
+ {mediano:true,nombre:"Consultorio odontológico Ferreira",estado:"finalizado",ubicacion:"Villa de Mayo, Buenos Aires",descripcion:"Realizamos pintura en paredes y techos, revestimientos símil cemento, cambio de iluminación y artefactos.",tipo:["Reforma integral"],detalle:"Agregamos un sector con wall panel y muebles con luces LED, y un sector para colocar un logo retroiluminado. Renovamos completamente baños, sala de espera y salas en general.",foto:"img/ferreira.webp",fotos:["img/ferreira2.webp", "img/ferreira3.webp", "img/ferreira4.webp"],instagram:[{"url": "https://www.instagram.com/p/DQVGz1gjBre/", "tipo": "carrusel", "fecha": "2025-10"}, {"url": "https://www.instagram.com/reel/DQcp8bCDqsr/", "tipo": "reel", "fecha": "2025-10"}, {"url": "https://www.instagram.com/p/DRwzJaMjpGp/", "tipo": "carrusel", "fecha": "2025-12"}, {"url": "https://www.instagram.com/reel/DR5Jw3MDkTD/", "tipo": "reel", "fecha": "2025-12"}, {"url": "https://www.instagram.com/p/DSICToBjoWz/", "tipo": "carrusel", "fecha": "2025-12"}, {"url": "https://www.instagram.com/reel/DSLkeMADgN_/", "tipo": "reel", "fecha": "2025-12"}]},
  {nombre:"Medical Esthetic",estado:"finalizado",ubicacion:"Torcuato, Buenos Aires",descripcion:"Renovamos parte de la fachada y del interior, renovando la estética de la marca.",tipo:["Reforma"],foto:"img/medical.webp"},
- {nombre:"Casa Giulia",estado:"finalizado",ubicacion:"Villanueva, Buenos Aires",descripcion:"Foco en la iluminación y la ambientación: artefactos, tiras LED y luces de exterior.",tipo:["Ambientación", "Diseño de interior"],detalle:"Artefactos y tiras LED en estantes de hierro que armamos específicamente, en recibidor y barra. Luces de exterior para realzar la entrada y la vegetación, y cartel LED exterior. Luz en el sector semicubierto de acceso para acompañar la circulación.",foto:"img/giulia.webp"},
- {nombre:"Local de ropa Rizzo Uomo",estado:"finalizado",ubicacion:"Rada Tilly, Chubut",descripcion:"Diseño interior y equipamiento completo de un local de ropa masculina en galería.",tipo:["Diseño de interior","Obra en seco"],detalle:"Hicimos el diseño interior y nos ocupamos de todo el equipamiento, desde la alfombra y los maniquíes hasta las telas para coser las cortinas de los probadores, la pintura y los muebles, que compramos en Buenos Aires. También realizamos la obra en seco, el armado de los muebles, la pintura y la colocación de los artefactos de iluminación.",foto:"img/rizzo.webp"}
+ {nombre:"Casa en Santa Bárbara",estado:"finalizado",ubicacion:"Troncos del Talar, Buenos Aires",descripcion:"Fachada, solarium exterior, cubierta e interior.",tipo:["Reforma integral"],detalle:"Resolvimos problemas de filtración en azotea y le hicimos un cambio de imagen a la fachada, incorporando wall panel y cambiando el color del tarquini. En el solarium exterior resolvimos grietas en el banco de hormigón y le dimos pintura y mantenimiento a todo ese sector, renovando su imagen. En el interior resolvimos problemas de humedad y cambiamos la iluminación, además de agregar un wall panel para renovar el espacio.",foto:"img/santabarbara.webp"},
+ {nombre:"Casa funeraria",estado:"finalizado",ubicacion:"Hurlingham, Buenos Aires",descripcion:"Diagnóstico y reparación de humedades originadas en la azotea.",tipo:["Reparación de humedades","Reforma"],detalle:"Nos llamaron por problemas de humedad en el interior y el origen del problema estaba en la azotea: tenía filtraciones, membranas muy antiguas y muros con revoques deteriorados. Hicimos el diagnóstico, la reparación de muros y grietas, el recambio y refuerzo de las membranas y un sellado final con membrana en pasta. Además realizamos arreglos menores en el interior y el acceso: recambio de sintenax, artefactos de iluminación e instalación de un aire acondicionado.",foto:"img/funeraria.webp",instagram:[{"url": "https://www.instagram.com/reel/DVL8oOtjrNO/", "tipo": "reel", "fecha": "2026-02"}, {"url": "https://www.instagram.com/p/DVZcqBgjtDi/", "tipo": "carrusel", "fecha": "2026-03"}]},
+ {mediano:true,nombre:"Casa Giulia",estado:"finalizado",ubicacion:"Villanueva, Buenos Aires",descripcion:"Foco en la iluminación y la ambientación: artefactos, tiras LED y luces de exterior.",tipo:["Ambientación", "Diseño de interior"],detalle:"Artefactos y tiras LED en estantes de hierro que armamos específicamente, en recibidor y barra. Luces de exterior para realzar la entrada y la vegetación, y cartel LED exterior. Luz en el sector semicubierto de acceso para acompañar la circulación.",foto:"img/giulia.webp"},
+ {mediano:true,nombre:"Casa en Barrio Castaños",estado:"finalizado",ubicacion:"Nordelta, Buenos Aires",descripcion:"Fachada, balcón, azotea, galería y parrilla.",tipo:["Reforma integral"],detalle:"Restauramos la fachada y le hicimos un cambio agregándole un wall panel y artefactos de iluminación en el wall panel y en el acceso para renovarla. Además, pintamos. También arreglamos el sector del balcón agregándole revestimiento y reparamos la azotea. En la galería y la parrilla hicimos una renovación integral: pintamos el frente de la parrilla, cambiamos el sector de la bacha, pintamos todo y cambiamos el color, renovando su diseño.",foto:"img/castanos.webp"},
+ {mediano:true,nombre:"Dúplex Los Coirones",estado:"finalizado",ubicacion:"Rada Tilly, Chubut",descripcion:"Vivienda multifamiliar en dúplex.",tipo:["Proyecto", "Obra nueva"],foto:"img/coirones.webp",fotos:["img/coirones2.webp", "img/coirones3.webp", "img/coirones4.webp"],instagram:[{"url": "https://www.instagram.com/reel/DHcJEK7xHOv/", "tipo": "reel", "fecha": "2025-03"}, {"url": "https://www.instagram.com/reel/DIsAdjFy5LB/", "tipo": "reel", "fecha": "2025-04"}, {"url": "https://www.instagram.com/p/DJz2a7dSIEJ/", "tipo": "carrusel", "fecha": "2025-05"}, {"url": "https://www.instagram.com/p/DPwe0vjDA48/", "tipo": "carrusel", "fecha": "2025-10"}, {"url": "https://www.instagram.com/reel/DP2AKG7Drfv/", "tipo": "reel", "fecha": "2025-10"}]},
+ {mediano:true,nombre:"Local de ropa Rizzo Uomo",estado:"finalizado",ubicacion:"Rada Tilly, Chubut",descripcion:"Diseño interior y equipamiento completo de un local de ropa masculina en galería.",tipo:["Diseño de interior","Obra en seco"],detalle:"Hicimos el diseño interior y nos ocupamos de todo el equipamiento, desde la alfombra y los maniquíes hasta las telas para coser las cortinas de los probadores, la pintura y los muebles, que compramos en Buenos Aires. También realizamos la obra en seco, el armado de los muebles, la pintura y la colocación de los artefactos de iluminación.",foto:"img/rizzo.webp"}
 ];
 const PROPIEDADES=[
 /* operacion: "Venta" | "Alquiler" | "Venta de pozo" | "Venta / Alquiler" · estado (opcional): "pronto" → etiqueta "Próximamente" */
- {operacion:"Venta / Alquiler",titulo:"Dúplex amoblados — Complejo Raíces",ubicacion:"Añelo, Neuquén",descripcion:"2 unidades amobladas, en venta o alquiler.",caracteristicas:["57 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Amoblado", "Aire acondicionado"],foto:"img/raices.webp"},
- {operacion:"Venta de pozo",titulo:"Dúplex en pozo — Complejo Raíces",ubicacion:"Añelo, Neuquén",descripcion:"4 unidades en venta de pozo.",caracteristicas:["57 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Aire acondicionado"],foto:"img/raices.webp"},
+ {operacion:"Venta / Alquiler",titulo:"Dúplex amoblados — Complejo Raíces",ubicacion:"Añelo, Neuquén",descripcion:"2 unidades amobladas, en venta o alquiler.",caracteristicas:["57 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Amoblado", "Aire acondicionado"],foto:"img/raices.webp",instagram:[{"url": "https://www.instagram.com/reel/DY-EA12OnXc/", "tipo": "reel", "fecha": "2026-05-30"}]},
+ {operacion:"Venta de pozo",titulo:"Dúplex en pozo — Complejo Raíces",ubicacion:"Añelo, Neuquén",descripcion:"4 unidades en venta de pozo.",caracteristicas:["57 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Aire acondicionado"],foto:"img/raices.webp",instagram:[{"url": "https://www.instagram.com/reel/DY-EA12OnXc/", "tipo": "reel", "fecha": "2026-05-30"}]},
  {operacion:"Alquiler",estado:"pronto",titulo:"Dúplex amoblados — Los Álamos",ubicacion:"Añelo, Neuquén",descripcion:"2 unidades en alquiler. Próximamente: están en construcción.",caracteristicas:["64 m²", "Dúplex", "3 ambientes", "2 dormitorios", "2 baños completos", "Gas natural y red cloacal", "Amoblado", "Aire acondicionado"],foto:"img/alamos.webp"}
 ];
 const TESTIMONIOS=[
@@ -110,8 +111,8 @@ if(!entered)root.classList.add("splash","lock");
   --surface-label:var(--accent-deep);
   --card-on-surface:var(--white);
   --card-on-navy:var(--paper);
-  --field:var(--white);
-  --field-line:rgb(var(--navy-rgb)/.25);
+  --field:rgb(var(--navy-rgb)/.05);
+  --field-line:rgb(var(--navy-rgb)/.38);
   --ph-from:var(--paper);
   --ph-to:var(--stone);
   --ph-ink:rgb(var(--shade-rgb)/.65);
@@ -283,9 +284,9 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .more[open] summary::after{transform:rotate(45deg)}
 .more p{padding-bottom:6px}
 .tag{display:inline-block;font-size:13px;border:1px solid var(--line);padding:3px 10px;margin:2px 4px 0 0;color:var(--muted)}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
-.kpi{display:flex;flex-direction:column;gap:18px;padding:40px 36px 36px}
-.kpi b{font:500 clamp(40px,4.4vw,56px)/1 var(--display);letter-spacing:-.02em}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
+.kpi{display:flex;flex-direction:column;gap:18px;padding:34px 28px 30px}
+.kpi b{font:500 clamp(34px,3.4vw,48px)/1 var(--display);letter-spacing:-.02em;white-space:nowrap}
 .kpi span{padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;max-width:30ch}
 .tests{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:24px;margin-top:44px}
 .tst{display:flex;flex-direction:column;gap:22px;margin:0;padding:34px;background:var(--card);border-top:3px solid var(--accent)}
@@ -310,6 +311,46 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .prop{display:flex;flex-direction:column}
 .prop .body{flex:1}
 .prop .btn{margin-top:auto;text-align:center}
+.ph.gal{cursor:pointer}
+.gcount{position:absolute;right:14px;bottom:14px;z-index:1;display:inline-flex;align-items:center;gap:7px;padding:7px 12px;background:rgb(var(--navy-rgb)/.9);color:var(--cream);font-size:13px;font-weight:600;letter-spacing:.04em;transition:background .25s,color .25s}
+.gcount svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.gcount b{font-weight:600}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* Instagram: una línea discreta, y al abrirla etiquetas finas (ícono de reel o carrusel + fecha) */
+.igl,.igmore summary{display:inline-flex;align-items:center;gap:9px;min-height:44px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+.igl svg,.igmore summary svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.igarrow{font-size:14px;letter-spacing:0}
+.igmore summary{cursor:pointer;list-style:none}
+.igmore summary::-webkit-details-marker{display:none}
+.igmore .igcount{font-style:normal;font-weight:400;letter-spacing:.04em}
+.igmore summary::after{content:"";width:6px;height:6px;margin:-3px 0 0 2px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .25s}
+.igmore[open] summary::after{margin-top:3px;transform:rotate(225deg)}
+.iglist{list-style:none;margin:2px 0 8px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.igchip,.igc{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 13px;border:1px solid var(--line-strong);color:var(--ink);font-size:13px;font-weight:500;letter-spacing:.02em;text-decoration:none;font-variant-numeric:tabular-nums;transition:border-color .2s,background .2s}
+.igchip svg,.igc svg{width:15px;height:15px;fill:none;stroke:var(--label);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.igwrap:focus-visible{outline-offset:2px}
+@media(max-width:860px){.igwrap{max-height:min(42vh,250px);overflow-y:auto;overscroll-behavior:contain}}
+.lb-igs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 10px}
+.igc{min-height:38px;border-color:rgb(255 255 255/.3);color:#fff}
+.igc svg{stroke:#fff}
+button.igc{background:none;font-family:inherit;cursor:pointer}
+@media(hover:hover){.igl:hover,.igmore summary:hover{color:var(--label)}.igchip:hover{border-color:var(--accent);background:rgb(var(--navy-rgb)/.05)}.igc:hover{background:rgb(255 255 255/.12)}}
+#lb{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:90;flex-direction:column;background:rgb(8 13 24/.985);color:#fff}
+#lb.open{display:flex}
+.lb-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:max(12px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px))}
+.lb-info{display:flex;align-items:baseline;gap:14px;min-width:0}
+.lb-title{font-size:16px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb-count{font-size:14px;opacity:.7;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lb-btn{display:flex;align-items:center;justify-content:center;width:46px;height:46px;padding:0;background:rgb(255 255 255/.1);border:1px solid rgb(255 255 255/.25);border-radius:50%;color:#fff;cursor:pointer;flex:none}
+.lb-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.lb-stage{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:0 max(64px,env(safe-area-inset-right,0px)) 0 max(64px,env(safe-area-inset-left,0px));touch-action:pan-y}
+.lb-stage img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.lb-prev,.lb-next{position:absolute;top:50%;margin-top:-23px}
+.lb-prev{left:max(12px,env(safe-area-inset-left,0px))}
+.lb-next{right:max(12px,env(safe-area-inset-right,0px))}
+.lb-foot{display:flex;justify-content:center;min-height:52px;padding:4px 16px max(10px,env(safe-area-inset-bottom,0px))}
+#lb.solo .lb-prev,#lb.solo .lb-next{display:none}
+@media(hover:hover){.ph.gal:hover .gcount{background:var(--accent);color:var(--on-accent)}}
 .badge{position:absolute;top:14px;left:14px;z-index:1;padding:5px 12px;background:var(--navy);color:var(--cream);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
 .badge.right{left:auto;right:14px}
 /* Un color por operación: Venta = azul marca · Alquiler = naranja · Venta / Alquiler = azul acero · Venta de pozo = verde */
@@ -323,22 +364,33 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
    9. CONTACTO
    ============================================================ */
 .cgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px}
-.clist{list-style:none;padding:0;margin:34px 0;display:grid;gap:16px}
+.cbtn{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:16px 28px}
+.cbtn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.clist{list-style:none;padding:30px 0 0;margin:40px 0 0;display:grid;gap:22px;border-top:1px solid var(--line)}
+.clist li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:center}
+.ci{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line-strong);border-radius:50%;color:var(--label)}
+.ci svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.clist small{margin-bottom:2px}
+.clist li>div{min-width:0}
+.clist a,.clist span{overflow-wrap:anywhere}/* el correo largo se parte en pantallas angostas en vez de ensanchar la página */
+.ftit{font-size:24px;margin:0 0 6px}
 .clist small{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .clist a{position:relative;text-decoration:none;border-bottom:1px solid var(--line-strong)}
 .clist a::after{content:"";position:absolute;top:-7px;bottom:-7px}/* área táctil más alta sin mover el subrayado */
-form{display:grid;gap:16px}
+form{display:grid;gap:18px}
+.fcard{align-content:start;padding:40px;border-top:3px solid var(--accent);box-shadow:0 18px 40px rgb(var(--shade-rgb)/.12)}
 label{display:grid;gap:8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-input,select,textarea{width:100%;padding:13px 14px;font:inherit;font-size:16px;letter-spacing:normal;text-transform:none;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:0}
+input,select,textarea{width:100%;padding:14px 16px;font:inherit;font-size:16px;letter-spacing:normal;text-transform:none;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:0}
 select option{background:var(--card);color:var(--ink)}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+select{appearance:none;-webkit-appearance:none;padding-right:44px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
 [aria-invalid="true"]{border-color:var(--label);box-shadow:inset 0 0 0 1px var(--label)}
-textarea{min-height:120px;resize:vertical}
+textarea{min-height:130px;resize:vertical}
+.fcard .btn[type=submit]{margin-top:6px;padding:16px;font-size:16px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .opt{display:none;font-style:normal}
 form[data-modo="whatsapp"] .opt{display:inline}
 form[data-modo="whatsapp"] [data-no-wa]{display:none}/* WhatsApp ya muestra el número de quien escribe */
-form[data-modo="whatsapp"] .row{grid-template-columns:1fr}
 .fnote{margin:0;font-size:13px;color:var(--muted)}
 #fmsg{font-size:14px;min-height:22px;color:var(--label)}
 #fmsg a{font-weight:600;text-underline-offset:3px}
@@ -394,21 +446,27 @@ footer a{display:block;text-decoration:none;padding:4px 0}
   .band{padding:76px 0}
   #burger{display:block;order:3}
   header .hctl{order:2;margin-left:auto;margin-right:2px}
-  #nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;background:var(--navy)}
-  #nav.open{display:flex}
-  #nav a{padding:11px 0}
-  #nav .btn{align-self:flex-start;margin-top:10px;padding:11px 18px}
+  #nav{display:none;position:absolute;top:68px;left:0;right:0;grid-template-columns:1fr 1fr;gap:10px;padding:10px 24px 24px;background:var(--navy);border-top:1px solid rgb(var(--light-rgb)/.12);box-shadow:0 18px 32px rgb(var(--shade-rgb)/.35)}
+  #nav.open{display:grid}
+  #nav a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:0 12px;border:1px solid rgb(var(--light-rgb)/.22);font-size:15px;opacity:1}
+  #nav .btn{grid-column:1/-1;background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:600;padding:0 12px;font-size:15px}
   .heroimg::after{background:linear-gradient(0deg,rgb(var(--navy-rgb)/.92),rgb(var(--navy-rgb)/.4) 55%,rgb(var(--navy-rgb)/.25))}
   .heroimg{width:100%;opacity:.7;-webkit-mask-image:linear-gradient(to left,#000 0%,transparent 95%);mask-image:linear-gradient(to left,#000 0%,transparent 95%)}
   .about,.areas,.cgrid,.fg,.project.big{grid-template-columns:1fr;gap:36px}
   .team{margin-top:72px}
   .sip{grid-template-columns:1fr;gap:36px;margin-top:64px;padding-top:48px}
   .adv{padding:32px 28px 24px}
-  .tgrid,.kpis,.row{grid-template-columns:1fr}
+  .lb-stage{padding:0 8px}
+  .lb-prev,.lb-next{background:rgb(8 13 24/.6)}
+  .tgrid,.row{grid-template-columns:1fr}
+  .fcard{padding:28px 22px}
+  .kpis{grid-template-columns:1fr 1fr;gap:14px}
+  .kpi b{font-size:34px}
   .tm{grid-template-columns:1fr}
   .tm .ph{grid-row:auto}
   .tm h3{margin-top:20px}
-  .kpi{padding:32px 28px 28px}
+  .kpi{padding:24px 20px 20px;gap:14px}
+  .kpi span{font-size:14px}
   .arow,.area.inmo .arow{grid-template-columns:1fr}
   .area.inmo .arow .ph{order:0}
   .arow .ph{min-height:220px}
@@ -442,6 +500,8 @@ footer a{display:block;text-decoration:none;padding:4px 0}
 /* ============================================================
    14. PREFERENCIAS DEL USUARIO Y RESPALDO SIN JAVASCRIPT
    ============================================================ */
+@media(max-width:420px){.kpi b{font-size:28px}}
+@media(max-width:359px){.kpis{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .rv-on .rv{opacity:1;transform:none;transition:none}
@@ -458,6 +518,8 @@ html:not(.js) .cgrid{grid-template-columns:1fr}
   html:not(.js) header .wrap{height:auto;flex-wrap:wrap;padding-block:8px}
   html:not(.js) #nav{display:flex;position:static;flex-direction:row;flex-wrap:wrap;gap:0 18px;width:100%;padding:0 0 6px}
   html:not(.js) #nav .btn{margin-top:0}
+  html:not(.js) #nav a{display:inline;min-height:0;padding:0;border:0}
+  html:not(.js) #nav .btn{background:none;color:inherit}
 }
 </style>
 </head>
@@ -564,6 +626,7 @@ html:not(.js) .cgrid{grid-template-columns:1fr}
 <div class="kpis">
 <div class="card kpi rv"><b>2024</b><span>Se conforma el estudio</span></div>
 <div class="card kpi rv"><b>+8 años</b><span>de trayectoria independiente de cada integrante</span></div>
+<div class="card kpi rv"><b>+30</b><span>obras realizadas</span></div>
 <div class="card kpi rv"><b>4</b><span>profesionales en arquitectura, interiorismo, instalaciones y obra</span></div>
 </div>
 </div></section>
@@ -585,17 +648,18 @@ html:not(.js) .cgrid{grid-template-columns:1fr}
 <div>
 <div class="eyebrow">Contacto</div>
 <h2>Hablemos de tu proyecto.</h2>
+<p class="lead">Contanos qué necesitás y te respondemos por WhatsApp.</p>
+<a class="btn solid cbtn" id="cWaBtn" href="https://wa.me/5491121597117" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.5L3 21z"/><path d="M9 9.5c.3 1.6 2.4 3.9 4.9 4.6l1.1-1.2-1.8-1-.9.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.9-1-1.8L9 9.5z"/></svg><span>Escribir por WhatsApp</span></a>
 <ul class="clist">
-<li><small>WhatsApp</small><a id="cWa" href="https://wa.me/5491121597117" target="_blank" rel="noopener">Escribinos por WhatsApp</a></li>
-<li><small>Instagram</small><a id="cIg" href="https://instagram.com/espaciomada.ar" target="_blank" rel="noopener">@espaciomada.ar</a></li>
-<li><small>Correo</small><a id="cMail" href="mailto:somos.espaciomada@gmail.com">somos.espaciomada@gmail.com</a></li>
-<li><small>Zona de trabajo</small><span id="cZone">Buenos Aires · Comodoro Rivadavia · Añelo, Neuquén · Argentina</span></li>
+<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span><div><small>Instagram</small><a id="cIg" href="https://instagram.com/espaciomada.ar" target="_blank" rel="noopener">@espaciomada.ar</a></div></li>
+<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><div><small>Correo</small><a id="cMail" href="mailto:somos.espaciomada@gmail.com">somos.espaciomada@gmail.com</a></div></li>
+<li><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 1 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span><div><small>Zona de trabajo</small><span id="cZone">Buenos Aires · Comodoro Rivadavia · Añelo, Neuquén · Argentina</span></div></li>
 </ul>
-<a class="btn solid" id="cWaBtn" href="https://wa.me/5491121597117" target="_blank" rel="noopener">Escribir por WhatsApp</a>
 </div>
-<form id="form" novalidate>
-<div class="row"><label>Nombre<input name="nombre" required autocomplete="name"></label><label data-no-wa>Teléfono<input name="tel" type="tel" autocomplete="tel"></label></div>
-<label><span>Correo <em class="opt">(opcional)</em></span><input name="email" type="email" required autocomplete="email"></label>
+<form id="form" class="card fcard" novalidate>
+<h3 class="ftit">O dejanos tu consulta</h3>
+<div class="row"><label>Nombre<input name="nombre" required autocomplete="name"></label><label><span>Correo <em class="opt">(opcional)</em></span><input name="email" type="email" required autocomplete="email"></label></div>
+<label data-no-wa>Teléfono<input name="tel" type="tel" autocomplete="tel"></label>
 <label>Consulta sobre<select name="tema"><option>Arquitectura y construcción</option><option>Capacitaciones / sistema SIP</option><option>Compra de dúplex en Añelo</option><option>Alquiler de dúplex en Añelo</option><option>Otra consulta</option></select></label>
 <label>Mensaje<textarea name="msg" required></textarea></label>
 <button class="btn solid" type="submit">Enviar consulta</button>
@@ -615,6 +679,12 @@ html:not(.js) .cgrid{grid-template-columns:1fr}
 </div>
 <div class="copy">© <span id="yr"></span> MADA. Todos los derechos reservados.</div>
 </div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Galería de fotos" data-aria="Galería de fotos">
+<div class="lb-top"><div class="lb-info"><span class="lb-title" id="lbTitle"></span><span class="lb-count" id="lbCount"></span></div><button type="button" class="lb-btn" id="lbClose" aria-label="Cerrar" data-aria="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="lb-stage"><button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior" data-aria="Anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><img id="lbImg" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Siguiente" data-aria="Siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+<div class="lb-foot"><div id="lbIg" class="lb-igs"></div></div>
+</div>
 
 <script>
 /* ============================================================
@@ -742,6 +812,57 @@ const EN={
 "¿No se abrió? Abrir WhatsApp":"Didn't open? Open WhatsApp",
 "Cambiar a modo claro":"Switch to light mode",
 "Trayectoria":"Track record",
+"Reel · feb 2026":"Reel · Feb 2026",
+"Carrusel · mar 2026":"Carousel · Mar 2026",
+"Reel · 12 jun 2025":"Reel · 12 Jun 2025",
+"Reel · 20 mar 2026":"Reel · 20 Mar 2026",
+"Reel · 26 mar 2026":"Reel · 26 Mar 2026",
+"Carrusel · 8 abr 2026":"Carousel · 8 Apr 2026",
+"Carrusel · 23 may 2026":"Carousel · 23 May 2026",
+"Reel · 30 may 2026":"Reel · 30 May 2026",
+"Carrusel · 11 jun 2026":"Carousel · 11 Jun 2026",
+"Reel · 17 jun 2026":"Reel · 17 Jun 2026",
+"Carrusel · 19 jun 2026":"Carousel · 19 Jun 2026",
+"Reel · 27 jun 2026":"Reel · 27 Jun 2026",
+"Carrusel · 29 jun 2026":"Carousel · 29 Jun 2026",
+"Reel · 6 jul 2026":"Reel · 6 Jul 2026",
+"Reel · 20 jul 2026":"Reel · 20 Jul 2026",
+"Carrusel · 31 jul 2026":"Carousel · 31 Jul 2026",
+"Reel · 10 ago 2026":"Reel · 10 Aug 2026",
+"Carrusel · 20 ago 2026":"Carousel · 20 Aug 2026",
+"Reel · 26 ago 2026":"Reel · 26 Aug 2026",
+"Carrusel · 4 sep 2026":"Carousel · 4 Sep 2026",
+"Reel · 16 sep 2026":"Reel · 16 Sep 2026",
+"Carrusel · 29 sep 2026":"Carousel · 29 Sep 2026",
+"Reel · 13 oct 2026":"Reel · 13 Oct 2026",
+"Carrusel · 27 oct 2026":"Carousel · 27 Oct 2026",
+"Reel · 6 nov 2026":"Reel · 6 Nov 2026",
+"Publicaciones de Instagram":"Instagram posts",
+"Reel · mar 2025":"Reel · Mar 2025",
+"Reel · abr 2025":"Reel · Apr 2025",
+"Carrusel · may 2025":"Carousel · May 2025",
+"Carrusel · oct 2025":"Carousel · Oct 2025",
+"Reel · oct 2025":"Reel · Oct 2025",
+"Carrusel":"Carousel",
+"Publicación":"Post",
+"Carrusel · dic 2025":"Carousel · Dec 2025",
+"Reel · dic 2025":"Reel · Dec 2025",
+"Ver fotos":"View photos",
+"Galería de fotos":"Photo gallery",
+"Cerrar":"Close",
+"Anterior":"Previous",
+"Siguiente":"Next",
+"Ver en Instagram":"View on Instagram",
+"foto":"photo",
+"fotos":"photos",
+"Contanos qué necesitás y te respondemos por WhatsApp.":"Tell us what you need and we'll reply on WhatsApp.",
+"O dejanos tu consulta":"Or leave us your inquiry",
+"obras realizadas":"projects completed",
+"Casa funeraria":"Funeral home",
+"Hurlingham, Buenos Aires":"Hurlingham, Buenos Aires",
+"Reparación de humedades":"Damp repair",
+"Diagnóstico y reparación de humedades originadas en la azotea.":"Diagnosis and repair of dampness coming from the flat roof.",
+"Nos llamaron por problemas de humedad en el interior y el origen del problema estaba en la azotea: tenía filtraciones, membranas muy antiguas y muros con revoques deteriorados. Hicimos el diagnóstico, la reparación de muros y grietas, el recambio y refuerzo de las membranas y un sellado final con membrana en pasta. Además realizamos arreglos menores en el interior y el acceso: recambio de sintenax, artefactos de iluminación e instalación de un aire acondicionado.":"They called us about dampness problems inside, and the source was the flat roof: it had leaks, very old membranes and walls with deteriorated plaster. We did the diagnosis, the repair of walls and cracks, the replacement and reinforcement of the membranes and a final seal with liquid membrane. We also did minor work inside and at the entrance: replacing the vinyl flooring, lighting fixtures and installing an air conditioner.",
 "Venta / Alquiler":"Sale / Rent",
 "Venta de pozo":"Off-plan sale",
 "Dúplex amoblados — Complejo Raíces":"Furnished duplexes — Complejo Raíces",
@@ -832,6 +953,9 @@ function setLang(l){
   }
   $$("[data-label]").forEach(e=>{if(!e.dataset.es)e.dataset.es=e.dataset.label;e.dataset.label=l==="en"&&EN[e.dataset.es]||e.dataset.es});
   $$(".ph[role=img]").forEach(e=>e.setAttribute("aria-label",T(e.dataset.alt||e.dataset.label)));
+  $$("[data-g]").forEach(e=>e.setAttribute("aria-label",T("Ver fotos")+": "+e.dataset.nombre));
+  $$("[data-aria]").forEach(e=>e.setAttribute("aria-label",T(e.dataset.aria)));
+  if(typeof fmtF==="function")$$(".igd").forEach(e=>{if(e.firstChild)e.firstChild.nodeValue=fmtF(e.dataset.f,l)});
   root.lang=l==="en"?"en":"es-AR";
   document.title=META[l][0];
   $('meta[name=description]').content=META[l][1];
@@ -852,13 +976,32 @@ $$(".ph[data-img]").forEach(e=>{const u=CONFIG.images[e.dataset.img];if(u){e.sty
 </script>
 <script>
 const ESTADOS={finalizado:"Finalizado",obra:"En obra",pronto:"Próximamente"};
-$("#projects").innerHTML=PROYECTOS.map(p=>`<article class="card project rv${p.destacado?" big":p.mediano?" half":""}"><div class="ph${p.foto?" has":""}" data-label="Foto del proyecto"${p.foto?` role="img" aria-label="${esc(p.nombre)}" data-alt="${esc(p.nombre)}"`:""}${bg(p.foto)}>${p.estado&&ESTADOS[p.estado]?`<span class="badge st-${esc(p.estado)}">${ESTADOS[p.estado]}</span>`:""}</div><div class="body"><span class="meta">${esc(p.ubicacion)}</span><h3>${esc(p.nombre)}</h3><p>${esc(p.descripcion)}</p><div>${p.tipo.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>${p.detalle?`<details class="more"><summary>Ver detalle</summary><p>${esc(p.detalle)}</p></details>`:""}</div></article>`).join("");
+const todas=p=>[p.foto,...(p.fotos||[])].filter(Boolean);
+const igs=p=>!p.instagram?[]:Array.isArray(p.instagram)?p.instagram:[{url:p.instagram}];
+const MES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const MES_EN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const fmtF=(f,l)=>{const a=String(f||"").split("-");if(!a[1]||!MES[+a[1]-1])return"";return(a[2]?+a[2]+" ":"")+((l==="en"?MES_EN:MES)[+a[1]-1])+" "+a[0]};
+const IGTIPO={reel:"Reel",carrusel:"Carrusel"};
+const IGICON={reel:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 8.5v7l6-3.5z"/></svg>',carrusel:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="14" height="14" rx="2"/><path d="M17 3H5a2 2 0 0 0-2 2v12"/></svg>'};
+const igChip=(x,cls)=>`<a class="${cls}" href="${esc(x.url)}" target="_blank" rel="noopener">${IGICON[x.tipo]||IGSVG}<span class="sr">${IGTIPO[x.tipo]||"Publicación"} </span><span class="igd" data-f="${esc(x.fecha||"")}">${fmtF(x.fecha,typeof lang==="string"?lang:"es")}</span></a>`;
+const IGSVG="<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.3\" cy=\"6.7\" r=\".6\"/></svg>";
+const FOTOSVG="<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><circle cx=\"9\" cy=\"10\" r=\"1.5\"/><path d=\"M21 16l-5-5-8 8\"/></svg>";
+$("#projects").innerHTML=PROYECTOS.map((p,i)=>{
+  const n=todas(p).length,galeria=n>1;
+  const estado=p.estado&&ESTADOS[p.estado]?`<span class="badge st-${esc(p.estado)}">${ESTADOS[p.estado]}</span>`:"";
+  const cuenta=galeria?`<span class="gcount">${FOTOSVG}<b>+${n-1}</b><span>${n>2?"fotos":"foto"}</span></span>`:"";
+  const attrs=!p.foto?"":galeria?` role="button" tabindex="0" data-g="${i}" data-nombre="${esc(p.nombre)}" aria-label="Ver fotos: ${esc(p.nombre)}"`:` role="img" aria-label="${esc(p.nombre)}" data-alt="${esc(p.nombre)}"`;
+  const L=igs(p);
+  const ig=L.length===1?`<a class="igl" href="${esc(L[0].url)}" target="_blank" rel="noopener">${IGSVG}<span>Instagram</span><span class="sr">: ${esc(p.nombre)}</span><span class="igarrow" aria-hidden="true">↗</span></a>`
+    :L.length>1?(()=>{const lista=`<ul class="iglist">${L.map(x=>`<li>${igChip(x,"igchip")}</li>`).join("")}</ul>`;return `<details class="more igmore"><summary>${IGSVG}<span>Instagram</span><span class="sr">: ${esc(p.nombre)}</span><em class="igcount">${L.length}</em></summary>${L.length>8?`<div class="igwrap" tabindex="0" role="region" aria-label="Publicaciones de Instagram" data-aria="Publicaciones de Instagram">${lista}</div>`:lista}</details>`})():"";
+  return `<article class="card project rv${p.destacado?" big":p.mediano?" half":""}"><div class="ph${p.foto?" has":""}${galeria?" gal":""}" data-label="Foto del proyecto"${attrs}${bg(p.foto)}>${estado}${cuenta}</div><div class="body"><span class="meta">${esc(p.ubicacion)}</span><h3>${esc(p.nombre)}</h3><p>${esc(p.descripcion)}</p><div>${p.tipo.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>${ig}${p.detalle?`<details class="more"><summary>Ver detalle</summary><p>${esc(p.detalle)}</p></details>`:""}</div></article>`;
+}).join("");
 
 </script>
 <script>
 const OPCLASE={"Venta":"op-venta","Alquiler":"alq","Venta / Alquiler":"op-mixto","Venta de pozo":"op-pozo"};
 const PROP_EJEMPLO=op=>({operacion:op,titulo:"Dúplex — título a definir",ubicacion:"Añelo, Neuquén",descripcion:"Descripción provisional. Completar con datos reales.",caracteristicas:["Característica 1","Característica 2","Característica 3"],foto:""});
-$("#props").innerHTML=(PROPIEDADES.length?PROPIEDADES:[PROP_EJEMPLO("Venta"),PROP_EJEMPLO("Alquiler")]).map(p=>`<article class="card prop rv"><div class="ph${p.foto?" has":""}" data-label="Foto de la propiedad"${bg(p.foto)}><span class="badge${OPCLASE[p.operacion]?" "+OPCLASE[p.operacion]:""}">${esc(p.operacion)}</span>${{pronto:"Próximamente",obra:"En obra"}[p.estado]?`<span class="badge right st-${esc(p.estado)}">${{pronto:"Próximamente",obra:"En obra"}[p.estado]}</span>`:""}</div><div class="body"><span class="meta">${esc(p.ubicacion)}</span><h3>${esc(p.titulo)}</h3><p>${esc(p.descripcion)}</p><ul>${p.caracteristicas.map(c=>`<li>${esc(c)}</li>`).join("")}</ul><a class="btn solid" target="_blank" rel="noopener" href="${wa("Hola MADA, quiero consultar por: "+p.titulo+" ("+p.operacion+") en "+p.ubicacion)}">Consultar por WhatsApp</a></div></article>`).join("");
+$("#props").innerHTML=(PROPIEDADES.length?PROPIEDADES:[PROP_EJEMPLO("Venta"),PROP_EJEMPLO("Alquiler")]).map(p=>`<article class="card prop rv"><div class="ph${p.foto?" has":""}" data-label="Foto de la propiedad"${bg(p.foto)}><span class="badge${OPCLASE[p.operacion]?" "+OPCLASE[p.operacion]:""}">${esc(p.operacion)}</span>${{pronto:"Próximamente",obra:"En obra"}[p.estado]?`<span class="badge right st-${esc(p.estado)}">${{pronto:"Próximamente",obra:"En obra"}[p.estado]}</span>`:""}</div><div class="body"><span class="meta">${esc(p.ubicacion)}</span><h3>${esc(p.titulo)}</h3><p>${esc(p.descripcion)}</p><ul>${p.caracteristicas.map(c=>`<li>${esc(c)}</li>`).join("")}</ul>${igs(p).length?`<a class="igl" href="${esc(igs(p)[0].url)}" target="_blank" rel="noopener">${IGSVG}<span>Instagram</span><span class="sr">: ${esc(p.titulo)}</span><span class="igarrow" aria-hidden="true">↗</span></a>`:""}<a class="btn solid" target="_blank" rel="noopener" href="${wa("Hola MADA, quiero consultar por: "+p.titulo+" ("+p.operacion+") en "+p.ubicacion)}">Consultar por WhatsApp</a></div></article>`).join("");
 
 </script>
 <script>
@@ -870,7 +1013,7 @@ $("#tests").innerHTML=[...TESTIMONIOS,...Array(Math.max(0,3-TESTIMONIOS.length))
 const link=(sel,href,txt)=>{const e=$(sel);if(href){e.href=href;if(txt)e.textContent=txt}};
 if(CONFIG.whatsapp){
   $$("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"});
-  ["#cWa","#cWaBtn","#fWa"].forEach(s=>link(s,wa("Hola MADA")));
+  ["#cWaBtn","#fWa"].forEach(s=>link(s,wa("Hola MADA")));
 }
 if(CONFIG.instagram){link("#cIg","https://instagram.com/"+CONFIG.instagram,"@"+CONFIG.instagram);link("#fIg","https://instagram.com/"+CONFIG.instagram)}
 if(CONFIG.email){link("#cMail","mailto:"+CONFIG.email,CONFIG.email);link("#fMail","mailto:"+CONFIG.email)}
@@ -955,6 +1098,60 @@ form.onsubmit=async e=>{
   }else fmsg.textContent=T("Formulario listo: configurá formEndpoint, WhatsApp o correo en CONFIG.");
 };
 
+</script>
+<script>
+/* ============================================================
+   GALERÍA DE FOTOS — visor a pantalla completa (flechas, teclado y deslizar con el dedo)
+   ============================================================ */
+(function(){
+  const lb=$("#lb"),img=$("#lbImg"),tit=$("#lbTitle"),cnt=$("#lbCount"),ig=$("#lbIg"),stage=$(".lb-stage");
+  let fotos=[],k=0,idx=0,origen=null;
+  const fondo=()=>$$("header,main,footer");
+  function ver(j){
+    k=(j+fotos.length)%fotos.length;
+    img.src=fotos[k];
+    img.alt=T(PROYECTOS[idx].nombre)+" — "+T("Foto")+" "+(k+1);
+    cnt.textContent=fotos.length>1?(k+1)+" / "+fotos.length:"";
+    if(fotos.length>1){new Image().src=fotos[(k+1)%fotos.length];new Image().src=fotos[(k-1+fotos.length)%fotos.length]}
+  }
+  function abrir(i,el){
+    idx=i;const p=PROYECTOS[i];fotos=todas(p);origen=el;
+    tit.textContent=T(p.nombre);
+    ig.innerHTML="";
+    const L=igs(p);
+    if(L.length>6){
+      const a=document.createElement("button");a.type="button";a.className="igc";a.innerHTML=IGSVG+"<span></span>";
+      a.lastChild.textContent="Instagram ("+L.length+")";
+      a.onclick=()=>{const card=origen&&origen.closest(".project"),d=card&&card.querySelector("details.igmore");cerrar();if(d){d.open=true;d.scrollIntoView({block:"center"});const sm=d.querySelector("summary");if(sm)sm.focus({preventScroll:true})}};
+      ig.appendChild(a);
+    }else if(L.length===1){ig.innerHTML=`<a class="igc" href="${esc(L[0].url)}" target="_blank" rel="noopener">${IGSVG}<span>Instagram</span><span class="igarrow" aria-hidden="true">↗</span></a>`}else ig.innerHTML=L.map(x=>igChip(x,"igc")).join("");
+    lb.classList.toggle("solo",fotos.length<2);
+    lb.classList.add("open");root.classList.add("lock");
+    fondo().forEach(e=>e.inert=true);
+    ver(0);$("#lbClose").focus();
+  }
+  function cerrar(){
+    lb.classList.remove("open");root.classList.remove("lock");
+    fondo().forEach(e=>e.inert=false);
+    if(origen)origen.focus({preventScroll:true});
+  }
+  $("#projects").addEventListener("click",e=>{const g=e.target.closest("[data-g]");if(g)abrir(+g.dataset.g,g)});
+  $("#projects").addEventListener("keydown",e=>{const g=e.target.closest&&e.target.closest("[data-g]");if(!g)return;if(e.key===" ")e.preventDefault();else if(e.key==="Enter"){e.preventDefault();abrir(+g.dataset.g,g)}});
+  $("#projects").addEventListener("keyup",e=>{const g=e.target.closest&&e.target.closest("[data-g]");if(g&&e.key===" "){e.preventDefault();abrir(+g.dataset.g,g)}});
+  $("#lbClose").onclick=cerrar;
+  $("#lbPrev").onclick=()=>ver(k-1);
+  $("#lbNext").onclick=()=>ver(k+1);
+  lb.addEventListener("click",e=>{if(e.target===lb||e.target===stage||e.target.classList.contains("lb-top")||e.target.classList.contains("lb-foot"))cerrar()});
+  document.addEventListener("keydown",e=>{
+    if(!lb.classList.contains("open"))return;
+    if(e.key==="Escape")cerrar();
+    else if(e.key==="ArrowRight"&&fotos.length>1)ver(k+1);
+    else if(e.key==="ArrowLeft"&&fotos.length>1)ver(k-1);
+  });
+  let x0=null;
+  stage.addEventListener("touchstart",e=>{x0=e.touches[0].clientX},{passive:true});
+  stage.addEventListener("touchend",e=>{if(x0===null||fotos.length<2)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>50)ver(dx<0?k+1:k-1)},{passive:true});
+})();
 </script>
 <script>
 /* ============================================================
