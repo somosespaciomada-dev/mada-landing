@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://espaciomada.com.ar/sitemap.xml
